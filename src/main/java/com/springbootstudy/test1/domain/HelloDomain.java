@@ -1,6 +1,5 @@
 package com.springbootstudy.test1.domain;
 
-import lombok.Data;
 import lombok.Getter;
 
 @Getter
