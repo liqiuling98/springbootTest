@@ -1,6 +1,8 @@
 package com.springbootstudy.test1;
 
+import com.springbootstudy.test1.domain.PropertyDomain;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -17,6 +19,15 @@ class Test1ApplicationTests {
     void contextLoads() {
         System.out.println(age);
         System.out.println(name);
+    }
+
+//    配置类使用
+    @Autowired
+    private PropertyDomain propertyDomain;
+
+    @Test
+    void conDom(){
+        System.out.println(propertyDomain.toString());
     }
 
 }
